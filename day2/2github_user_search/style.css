@@ -1,0 +1,42 @@
+body
+{
+ background-color:rgb(188, 223, 190);
+}
+#userInput
+{
+  background-color:rgb(109, 221, 137);
+  border :2px solid white;
+  opacity: .5;
+  margin-left: 280px;
+}
+.name{
+  margin-left:auto;
+  margin-top: 50px;
+  font-size:medium;
+  font-family:'Montserrat', sans-serif;
+  font-weight : bold;
+}
+
+.url{
+  margin-left: auto;
+  margin-top: 50px;
+}
+.danger
+{
+  color: rgb(188, 223, 190)
+}
+#navigate{
+  background-color: rgb(12, 151, 12);
+}
+.img-thumbnail
+{
+    width: 100px;
+    height: 100px;
+    float:right;
+}
+
+.details
+{
+    height: 200px;
+  width: 200px;
+}
