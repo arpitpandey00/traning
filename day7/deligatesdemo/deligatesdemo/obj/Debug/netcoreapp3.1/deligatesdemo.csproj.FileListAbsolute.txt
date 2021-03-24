@@ -1,0 +1,13 @@
+C:\Users\arpit.pandey\source\repos\deligatesdemo\deligatesdemo\bin\Debug\netcoreapp3.1\deligatesdemo.exe
+C:\Users\arpit.pandey\source\repos\deligatesdemo\deligatesdemo\bin\Debug\netcoreapp3.1\deligatesdemo.deps.json
+C:\Users\arpit.pandey\source\repos\deligatesdemo\deligatesdemo\bin\Debug\netcoreapp3.1\deligatesdemo.runtimeconfig.json
+C:\Users\arpit.pandey\source\repos\deligatesdemo\deligatesdemo\bin\Debug\netcoreapp3.1\deligatesdemo.runtimeconfig.dev.json
+C:\Users\arpit.pandey\source\repos\deligatesdemo\deligatesdemo\bin\Debug\netcoreapp3.1\deligatesdemo.dll
+C:\Users\arpit.pandey\source\repos\deligatesdemo\deligatesdemo\bin\Debug\netcoreapp3.1\deligatesdemo.pdb
+C:\Users\arpit.pandey\source\repos\deligatesdemo\deligatesdemo\obj\Debug\netcoreapp3.1\deligatesdemo.csprojAssemblyReference.cache
+C:\Users\arpit.pandey\source\repos\deligatesdemo\deligatesdemo\obj\Debug\netcoreapp3.1\deligatesdemo.AssemblyInfoInputs.cache
+C:\Users\arpit.pandey\source\repos\deligatesdemo\deligatesdemo\obj\Debug\netcoreapp3.1\deligatesdemo.AssemblyInfo.cs
+C:\Users\arpit.pandey\source\repos\deligatesdemo\deligatesdemo\obj\Debug\netcoreapp3.1\deligatesdemo.csproj.CoreCompileInputs.cache
+C:\Users\arpit.pandey\source\repos\deligatesdemo\deligatesdemo\obj\Debug\netcoreapp3.1\deligatesdemo.dll
+C:\Users\arpit.pandey\source\repos\deligatesdemo\deligatesdemo\obj\Debug\netcoreapp3.1\deligatesdemo.pdb
+C:\Users\arpit.pandey\source\repos\deligatesdemo\deligatesdemo\obj\Debug\netcoreapp3.1\deligatesdemo.genruntimeconfig.cache
