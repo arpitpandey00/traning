@@ -10,7 +10,7 @@ namespace deligatesrealtimedemo
         public int PlayAudioFile(string a)
         {
             if (a == "mvw")
-                VideoPlayerStatus = 0;
+                VideoPlayerStatus = 0 ;
             else
                 VideoPlayerStatus = -1;
             return VideoPlayerStatus;

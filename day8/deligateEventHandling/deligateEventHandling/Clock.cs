@@ -9,7 +9,7 @@ namespace deligateEventHandling
     {
         private int hour;
         private int sec;
-        private int mintue;
+        private int mintue ;
         public delegate void SecondChangeHandler(Object Clock, TimeInfoEventArs timeinfo);
         public event SecondChangeHandler Secchange;
 
