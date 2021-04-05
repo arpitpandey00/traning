@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <h1 class="text-center">{{title}}</h1>
   <div class="row">
     <div class="col-md-3">
@@ -10,6 +10,12 @@
     <div class="col-md-3">
       <button (click)="showPurchase()" class="btn btn-info">Purchase</button>
     </div>
+    <div class="col-md-3">
+      <button (click)="showChild()" class="btn btn-warning">child</button>
+    </div>
+    <div class="col-md-3">
+      <button (click)="showDirective()" class="btn btn-warning">Directive Demo</button>
+    </div>
   </div>
   <hr>
   <div class="row">
@@ -17,6 +23,79 @@
     <app-tshirt-demo *ngIf="showDataBindindDemo"></app-tshirt-demo>
     <app-product *ngIf="showProductDB"></app-product>
     <app-purchase *ngIf="showPurchaseRec"></app-purchase>
+    <app-child1 *ngIf="child1"></app-child1>
+    <app-child2 *ngIf="child2"></app-child2>
+    <app-hello *ngIf="hello"></app-hello>
   </div>
   </div>
-</div>
+</div> -->
+
+<div class="container">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/home">ARPIT</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/tshirtDemo">Data Binding <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/product">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/purchase">Master Details</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/shared">Shared Data</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/errorhandel">GlobalErrorHandler</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Directive">Directive Demo</a>
+      </li>
+      
+      
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>
+
+  <h1 class="text-center">{{title}}</h1>
+  <!-- <div class="row">
+    <div class="col-md-3">
+      <button routerLink="/home" class="btn btn-danger">home</button>
+    </div>
+    <div class="col-md-3">
+      <button routerLink="/tshirtDemo" class="btn btn-danger">Data Binding Demo</button>
+    </div>
+    <div class="col-md-3">
+      <button routerLink="/product" class="btn btn-warning">Structural Directive Demo</button>
+    </div>
+    <div class="col-md-3">
+      <button  routerLink="/purchase" class="btn btn-info">Purchase</button>
+    </div>
+    <div class="col-md-3">
+      <button  routerLink="/shared" class="btn btn-warning">Shared Data</button>
+    </div>
+        <div class="col-md-3">
+      <button  routerLink="/errorhandel" class="btn btn-warning">GlobalErrorHandler </button>
+    </div>
+    <div class="col-md-3">
+      <button  routerLink="/Directive" class="btn btn-warning">Directive</button>
+    </div>
+  </div>
+  <hr> -->
+  <div class="row">
+  <div class="col-md-12">
+    <router-outlet></router-outlet>
+  </div>
+  </div>
+</div> 

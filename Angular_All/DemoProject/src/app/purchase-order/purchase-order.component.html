@@ -1,5 +1,6 @@
+<h1 class="text-center">Purchase Details</h1>
 <div>
-    <h1>{{purchaseItem.PName}}</h1>
+    <h1>Company : {{purchaseItem.PName}}</h1>
     <p class="lead">Vendor : {{purchaseItem.PVendorName}} | Purchase Date : {{purchaseItem.PDate | date}}</p>
     <hr class="my-4">
     <div class="text-center">
@@ -8,12 +9,14 @@
                 <tr>
                     <th>Title</th>
                     <th>Price</th>
+                    <th>QUANTITY</th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let i of purchaseItem.PItems">
                         <td>{{i.Title}}</td>
                         <td>{{i.Price}}</td>
+                        <td>{{i.Quantity}}</td>
                 </tr>
             </tbody>
         </table>

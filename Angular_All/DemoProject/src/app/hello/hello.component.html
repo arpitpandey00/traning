@@ -1,1 +1,13 @@
-<p>hello works!</p>
+
+<h1 class="text-center">Directive Demo</h1>
+<hr>
+<br>
+<h2>Enter Color And Hover Mouse To Chnage Color Of Hello World</h2><hr><br>
+<div class="row">
+    <input type="text" class="text" [(ngModel)]='color'>
+    <div appChangeColor [color]='color'>
+        <h2>
+            Hello World
+        </h2>
+    </div>
+</div>

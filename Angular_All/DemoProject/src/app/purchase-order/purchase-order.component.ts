@@ -11,13 +11,15 @@ export class PurchaseOrderComponent implements OnInit,OnChanges{
   constructor() { }
  @Input()  purchaseItem: IPurchase;
  price=0;
+ quantity:number;
   ngOnInit(): void {
     
   }
   ngOnChanges():void{
     console.log(this.purchaseItem);
     this.purchaseItem.PItems.forEach(i=>{
-      this.price=this.price+i.Price;
+      this.quantity=i.Quantity;
+      this.price=(this.price*this.quantity)+i.Price;
     })
   }
 }
