@@ -19,5 +19,6 @@ export class ProductComponent implements OnInit {
   }
   displayedColumns: string[] = ['ID', 'TITLE', 'Price',  'ExpiryDate',  'Quantity' ];
   input:string;
+  price:number;
   
 }

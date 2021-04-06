@@ -16,13 +16,24 @@
 
                 <td> {{p.Title}}</td>
 
-                <td> {{p. Price}}</td>
+                <td> {{p. Price | currency:'INR'}}</td>
 
-                <td> {{p.ExpiryDate}}</td>
+                <td> {{p.ExpiryDate |date}}</td>
 
                 <td> {{p.Quantity}}</td>
 
-                <td> {{p.IsAvaliable}}</td>
+                <td>
+                    <ng-container *ngIf="p.IsAvaliable; then instock else outofstock">
+
+                    </ng-container>
+                    <ng-template #instock>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+
+                    </ng-template>
+                    <ng-template #outofstock>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </ng-template>
+                </td>
             </tr>
         </tbody>
 

@@ -22,6 +22,7 @@ import { Sharedchild1child2Component } from './sharedchild1child2/sharedchild1ch
 import { ErrorhandelerComponent } from './errorhandeler/errorhandeler.component';
 import { FormComponent } from './form/form.component';
 import { ProductSearchPipe } from './product-search.pipe';
+import { PriceSearchPipe } from './price-search.pipe';
 
 
 
@@ -40,7 +41,8 @@ import { ProductSearchPipe } from './product-search.pipe';
     Sharedchild1child2Component,
     ErrorhandelerComponent,
     FormComponent,
-    ProductSearchPipe
+    ProductSearchPipe,
+    PriceSearchPipe
   ],
   imports: [
     BrowserModule,

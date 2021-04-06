@@ -52,6 +52,7 @@ export class FormComponent implements OnInit {
   }
   login(): void {
     console.log(this.loginform.value);
+    console.log(this.user);
   }
   reset(): void {
     this.loginform.reset();
@@ -60,10 +61,10 @@ export class FormComponent implements OnInit {
     const phoneControl = this.loginform?.get('phonenumber');
     this.loginform.get('notification')?.valueChanges.subscribe((data: string) => {
       console.log(data);
-      if (data == 'phone') {
+      if (data == 'phonenumber') {
         phoneControl?.setValidators([Validators.required]);
       }
-      else if(data =='email') {
+      else if (data == 'email') {
         phoneControl?.clearValidators();
       }
       phoneControl?.updateValueAndValidity();

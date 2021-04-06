@@ -1,10 +1,20 @@
 <h1 class="text-center">Normal Table</h1>
 <hr>
 <br>
-<input type="text" [(ngModel)]="input" placeholder="Search Here">
+<div class="row">
+    <div class="col-md-4">
+        Enter Title : <input type="text" [(ngModel)]="input" placeholder="Search Here">
+
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-4">
+        Enter Price : <input type="number" class="class" placeholder="Enter Price" [(ngModel)]="price">
+    </div>
+</div>
+<br>
 <div class="container">
-    <table class= "table">
-        <thead class="table table-dark"> 
+    <table class="table">
+        <thead class="table table-dark">
             <tr>
                 <th> ID </th>
 
@@ -16,7 +26,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let p of products | productSearch:input">
+            <tr *ngFor="let p of products | productSearch:input | priceSearch:price">
                 <td>{{p.Id}}</td>
                 <td>{{p.Title}}</td>
                 <td>{{p.Price | currency :"INR"}}</td>
@@ -70,15 +80,15 @@
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
-    
+
 </div>
 <div class="row"></div>
 <footer class="page-footer font-small blue">
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      
+    <div class="footer-copyright text-center py-3">© 2021 Arpit:
+
     </div>
     <!-- Copyright -->
-  
-  </footer>
+
+</footer>

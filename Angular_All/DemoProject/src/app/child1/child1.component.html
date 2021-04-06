@@ -11,16 +11,23 @@
     </div> -->
     <div class="row">
         <form (ngSubmit)='updateproduct()' [formGroup]='productEditForm' novalidate class="form">
-            <input formControlName='Id' type="text" class="form-controll"><br><br>
-           
-            <input formControlName='Title' type="text" class="form-controll" ><br><br>
-            
-            <input formControlName='Price' type="text" class="form-controll" ><br><br>
-            
-            <input formControlName='Quantity' type="text" class="form-controll" ><br><br>
-            <input formControlName='ExpiryDate' type="text" class="form-controll" ><br><br>
-            <input formControlName='inStock' type="text" class="form-controll" ><br><br>
-            
+           Enter ID :  <input formControlName='Id' type="number" class="form-control" placeholder="ID">
+           <div class="alert alert-danger"
+           *ngIf="!productEditForm?.get('Id')?.valid && productEditForm?.get('Id')?.touched">Id Required</div><br><br>
+           Enter Title :  <input formControlName='Title' type="text" class="form-control" placeholder="Title">
+           <div class="alert alert-danger"
+           *ngIf="!productEditForm?.get('Title')?.valid && productEditForm?.get('Title')?.touched">Title Required</div><br><br>
+           Enter Price :<input formControlName='Price' type="number" class="form-control" placeholder="Price" >
+           <div class="alert alert-danger"
+           *ngIf="!productEditForm?.get('Price')?.valid && productEditForm?.get('Price')?.touched && productEditForm?.get('Price')?.errors?.priceerror">Price  Should be in between {{minprice}} and {{maxprice}}</div> <br><br>
+           Enter Quantity :<input formControlName='Quantity' type="number" class="form-control" placeholder="Quantity" >
+           <div class="alert alert-danger"
+           *ngIf="!productEditForm?.get('Quantity')?.valid && productEditForm?.get('Quantity')?.touched">Quantity Required</div><br><br>
+           Enter Expiry Date<input formControlName='ExpiryDate' type="text" class="form-control" placeholder="Expiry Date"><br><br>
+           <div class="alert alert-danger"
+           *ngIf="!productEditForm?.get('ExpiryDate')?.valid && productEditForm?.get('ExpiryDate')?.touched">ExpiryDate Required</div><br><br>
+           Enter Availabilty :<input formControlName='IsAvaliable' type="text" class="form-control" placeholder="InStock"><br><br>
+         
             
             <br>
             <button type="submit" [disabled]="productEditForm.invalid" class="btn btn-info">Update Product</button>
