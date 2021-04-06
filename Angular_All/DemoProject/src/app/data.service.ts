@@ -24,9 +24,16 @@ export class DataService {
     Quantity: 300,
     IsAvaliable: true,
   }
-
+  prod:IProducts;
   setPrice(price: number){
     this.purchase.Price=price;
+  }
+
+  updateproducts(p:IProducts){
+    this.prod ={
+      ...p
+    }
+    this.product$.next(this.prod);
   }
 
   getPurchase(): IPurchase[] {

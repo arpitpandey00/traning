@@ -1,5 +1,5 @@
 import { ErrorHandler, NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -20,6 +20,8 @@ import { ChangeColorDirective } from './change-color.directive';
 import { HomeComponent } from './home/home.component';
 import { Sharedchild1child2Component } from './sharedchild1child2/sharedchild1child2.component';
 import { ErrorhandelerComponent } from './errorhandeler/errorhandeler.component';
+import { FormComponent } from './form/form.component';
+import { ProductSearchPipe } from './product-search.pipe';
 
 
 
@@ -36,11 +38,14 @@ import { ErrorhandelerComponent } from './errorhandeler/errorhandeler.component'
     ChangeColorDirective,
     HomeComponent,
     Sharedchild1child2Component,
-    ErrorhandelerComponent
+    ErrorhandelerComponent,
+    FormComponent,
+    ProductSearchPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatExpansionModule,
     AppRoutingModule,

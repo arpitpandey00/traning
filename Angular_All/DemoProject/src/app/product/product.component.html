@@ -1,7 +1,7 @@
 <h1 class="text-center">Normal Table</h1>
 <hr>
 <br>
-
+<input type="text" [(ngModel)]="input" placeholder="Search Here">
 <div class="container">
     <table class= "table">
         <thead class="table table-dark"> 
@@ -16,7 +16,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let p of products">
+            <tr *ngFor="let p of products | productSearch:input">
                 <td>{{p.Id}}</td>
                 <td>{{p.Title}}</td>
                 <td>{{p.Price | currency :"INR"}}</td>
@@ -72,10 +72,13 @@
     </table>
     
 </div>
+<div class="row"></div>
+<footer class="page-footer font-small blue">
 
-<footer class="page-footer font-small blue pt-4">
-    <div class="footer-copyright text-center py-3">
-        NOTE:In this component we have used a dataservice to let the component access a function which return some data and
-        is shown in a table, and if item is out of stock a button will be visible to order more.
-      </div>
-</footer>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      
+    </div>
+    <!-- Copyright -->
+  
+  </footer>

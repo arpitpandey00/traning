@@ -18,6 +18,6 @@ export class ProductComponent implements OnInit {
     console.log(this.products);
   }
   displayedColumns: string[] = ['ID', 'TITLE', 'Price',  'ExpiryDate',  'Quantity' ];
-  
+  input:string;
   
 }

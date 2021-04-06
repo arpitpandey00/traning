@@ -1,10 +1,30 @@
-
+<!-- 
 
     <div class="col-md-4">
+       
         <h3>Change Price</h3>
         <hr>
         <input type="number" class="text" placeholder="input price" [(ngModel)]="data">
         <br>
         <br>
         <button class="btn btn-danger" (click)="setprice()" >Set Data</button>        
-    </div>
+    </div> -->
+    <div class="row">
+        <form (ngSubmit)='updateproduct()' [formGroup]='productEditForm' novalidate class="form">
+            <input formControlName='Id' type="text" class="form-controll"><br><br>
+           
+            <input formControlName='Title' type="text" class="form-controll" ><br><br>
+            
+            <input formControlName='Price' type="text" class="form-controll" ><br><br>
+            
+            <input formControlName='Quantity' type="text" class="form-controll" ><br><br>
+            <input formControlName='ExpiryDate' type="text" class="form-controll" ><br><br>
+            <input formControlName='inStock' type="text" class="form-controll" ><br><br>
+            
+            
+            <br>
+            <button type="submit" [disabled]="productEditForm.invalid" class="btn btn-info">Update Product</button>
+                <button type="button" (click)='reset()' class="btn btn-danger">Reset</button>
+        </form>
+        
+    </div><br>

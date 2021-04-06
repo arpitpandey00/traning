@@ -1,19 +1,29 @@
 
-<h1 class="class text-center">Directive Demo</h1>
+<h1 class="text-center">Directive Demo</h1>
 <hr>
 <br>
 <h2>Enter Color And Hover Mouse To Chnage Color Of Hello World</h2><hr><br>
 <div class="row">
-    <input type="text" class="text" [(ngModel)]='color'>
-    <div appChangeColor [color]='color'>
-        <h2>
-            Hello World
-        </h2>
-    </div>
-</div>
+   <div class="col-md-4">
 
-<footer class="page-footer font-small blue pt-4">
-    <div class="footer-copyright text-center py-3">
-        <!-- <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> -->
-      </div>
-</footer>
+       <input type="text" class="text" [(ngModel)]='color'>
+    </div>
+    <div class="col-4-md"></div>
+    <div class="col-4-md">
+        <div appChangeColor [color]='color'>
+            <h2>
+                Hello World
+            </h2>
+        </div>
+    </div>
+    
+</div>
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
