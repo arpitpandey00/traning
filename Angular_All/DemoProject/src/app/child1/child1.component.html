@@ -23,7 +23,7 @@
            Enter Quantity :<input formControlName='Quantity' type="number" class="form-control" placeholder="Quantity" >
            <div class="alert alert-danger"
            *ngIf="!productEditForm?.get('Quantity')?.valid && productEditForm?.get('Quantity')?.touched">Quantity Required</div><br><br>
-           Enter Expiry Date<input formControlName='ExpiryDate' type="text" class="form-control" placeholder="Expiry Date"><br><br>
+           Enter Expiry Date<input formControlName='ExpiryDate' type="text" class="form-control" placeholder="Expiry Date">
            <div class="alert alert-danger"
            *ngIf="!productEditForm?.get('ExpiryDate')?.valid && productEditForm?.get('ExpiryDate')?.touched">ExpiryDate Required</div><br><br>
            Enter Availabilty :<input formControlName='IsAvaliable' type="text" class="form-control" placeholder="InStock"><br><br>
