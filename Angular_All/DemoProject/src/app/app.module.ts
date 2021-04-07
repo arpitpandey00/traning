@@ -23,6 +23,11 @@ import { ErrorhandelerComponent } from './errorhandeler/errorhandeler.component'
 import { FormComponent } from './form/form.component';
 import { ProductSearchPipe } from './product-search.pipe';
 import { PriceSearchPipe } from './price-search.pipe';
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { ReplayComponent } from './replay/replay.component';
+import { SubjectComponent } from './subject/subject.component';
+import { BehaviourSubjectComponent } from './behaviour-subject/behaviour-subject.component';
+import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 
 
 
@@ -42,7 +47,12 @@ import { PriceSearchPipe } from './price-search.pipe';
     ErrorhandelerComponent,
     FormComponent,
     ProductSearchPipe,
-    PriceSearchPipe
+    PriceSearchPipe,
+    RxjsComponent,
+    ReplayComponent,
+    SubjectComponent,
+    BehaviourSubjectComponent,
+    AsyncSubjectComponent
   ],
   imports: [
     BrowserModule,
