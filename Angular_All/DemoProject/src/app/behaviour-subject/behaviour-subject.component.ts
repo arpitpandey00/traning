@@ -50,8 +50,18 @@ export class BehaviourSubjectComponent implements OnInit,OnDestroy {
 
   }
   ngOnDestroy() {
-this.observer1$.unsubscribe();
-this.observer2$.unsubscribe();
-this.observer3$.unsubscribe();
+    // if(this.observer1$){
+    //   this.observer1$.unsubscribe();
+    //  } 
+    // if(this.observer2$){
+    //   this.observer2$.unsubscribe();
+    //  } 
+    // if(this.observer3$){
+    //   this.observer3$.unsubscribe();
+    //  } 
+      
+
+// this.observer2$.unsubscribe();
+// this.observer3$.unsubscribe();
   }
 }
