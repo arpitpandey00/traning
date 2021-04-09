@@ -25,21 +25,21 @@ export class AsyncSubjectComponent implements OnInit ,OnDestroy{
   }
 
   subscribe1() {
-    this.async.count$.subscribe(
+   this.observer1$= this.async.count$.subscribe(
       data => { this.observer1.push(data) },
       null,
       () => { this.showObserver1 = true; }
     )
   }
   susbcribe2() {
-    this.async.count$.subscribe(
+    this.observer2$=this.async.count$.subscribe(
       data => { this.observer2.push(data) },
       null,
       () => { this.showObserver2 = true; }
     )
   }
   susbcribe3() {
-    this.async.count$.subscribe(
+   this.observer3$= this.async.count$.subscribe(
       data => { this.observer3.push(data) },
       null,
       () => { this.showObserver3 = true; }
@@ -50,17 +50,10 @@ export class AsyncSubjectComponent implements OnInit ,OnDestroy{
 
   }
   ngOnDestroy() {
-// this.observer1$.unsubscribe();
-// this.observer2$.unsubscribe();
-// this.observer3$.unsubscribe();
-// if(this.observer1$){
-//   this.observer1$.unsubscribe();
-//  } 
-// if(this.observer2$){
-//   this.observer2$.unsubscribe();
-//  } 
-// if(this.observer3$){
-//   this.observer3$.unsubscribe();
-//  } 
+
+this.observer1$.unsubscribe();
+this.observer2$.unsubscribe();
+this.observer3$.unsubscribe();
+
   }
 }
