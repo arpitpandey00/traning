@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="databasefirstModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Details">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="vendor" Type="varchar" MaxLength="50" />
+    <Property Name="quantity" Type="int" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="50" />
+    <Property Name="price" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <Association Name="FK_Details_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="Details" Type="Self.Details" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Details">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="databasefirstModelStoreContainer">
+    <EntitySet Name="Details" EntityType="Self.Details" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Details_Products" Association="Self.FK_Details_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Details" EntitySet="Details" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

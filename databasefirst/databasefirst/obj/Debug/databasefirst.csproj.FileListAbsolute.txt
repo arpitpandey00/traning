@@ -1,0 +1,12 @@
+C:\Users\S S INFOTECH\source\repos\databasefirst\databasefirst\bin\Debug\databasefirst.exe.config
+C:\Users\S S INFOTECH\source\repos\databasefirst\databasefirst\bin\Debug\databasefirst.exe
+C:\Users\S S INFOTECH\source\repos\databasefirst\databasefirst\bin\Debug\databasefirst.pdb
+C:\Users\S S INFOTECH\source\repos\databasefirst\databasefirst\bin\Debug\EntityFramework.dll
+C:\Users\S S INFOTECH\source\repos\databasefirst\databasefirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\S S INFOTECH\source\repos\databasefirst\databasefirst\bin\Debug\EntityFramework.xml
+C:\Users\S S INFOTECH\source\repos\databasefirst\databasefirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\S S INFOTECH\source\repos\databasefirst\databasefirst\obj\Debug\databasefirst.csprojAssemblyReference.cache
+C:\Users\S S INFOTECH\source\repos\databasefirst\databasefirst\obj\Debug\databasefirst.csproj.CoreCompileInputs.cache
+C:\Users\S S INFOTECH\source\repos\databasefirst\databasefirst\obj\Debug\databasefirst.csproj.CopyComplete
+C:\Users\S S INFOTECH\source\repos\databasefirst\databasefirst\obj\Debug\databasefirst.exe
+C:\Users\S S INFOTECH\source\repos\databasefirst\databasefirst\obj\Debug\databasefirst.pdb
